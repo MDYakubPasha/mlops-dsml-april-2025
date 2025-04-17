@@ -52,3 +52,8 @@ if __name__ == "__main__":
 		optimizer.step()
 		
 		print(f"Epoch [{epoch+1}/{num_epochs}], Loss: {loss.item():.4f}")
+	
+
+	print("Training complete.")
+	# Save the model
+	torch.save(model.state_dict(), 'dummy_rnn.pth')		
